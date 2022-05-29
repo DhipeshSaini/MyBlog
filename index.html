@@ -1,0 +1,881 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Bellota|Dancing+Script|Great+Vibes|Indie+Flower|Poiret+One|Righteous|Sacramento|Shadows+Into+Light&amp;display=swap" rel="stylesheet">
+
+        
+
+<style>
+
+  /* Preloader */
+
+
+#loading {
+    background: url('giphy.gif') no-repeat white center;
+    position: absolute;
+    background-color: black: 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Preloader */
+
+
+
+
+.parallax1 {
+  background-image: url("intro.jfif");
+
+  min-height: 90%; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 grey;
+}
+
+
+.scrolltotop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #464749;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.scrolltotop:hover {
+  background-color: pink;
+}
+
+#social:hover{
+  text-shadow: 1px 1px 6px grey;
+    
+}
+
+#footer:hover{
+  text-shadow: 1px 1px 6px black;
+    
+}
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoInstagram:hover {
+  background-color: #D33072;
+}
+
+.social-network a.icoYoutube:hover {
+  background-color: red;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoYoutube:hover i
+ {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 2px;
+  width: 2px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1 {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+
+</head>
+
+<body width="auto">
+
+ <div id="loading"></div>
+
+ <script>
+      function hideLoader() {
+    $('#loading').hide();
+}
+
+
+
+// Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+setTimeout(hideLoader, 3 * 1000);
+    </script>
+
+
+
+<button  onclick="topFunction()" class="scrolltotop" title="Go to top" ><img  height="25px" width="30px" src="top.png"></button>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light" style="height: auto; width: auto;">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#" style="margin-left: 3%; margin-right: 5%; font-family: 'Poiret One', cursive; font-size: 30px;" ><b>DHIPESH</b></a>
+  
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Links -->
+ <div class="collapse navbar-collapse"  id="collapsibleNavbar" style=" padding: 15 15 13 15; " >
+    <ul class="navbar-nav"  >
+      <li class="nav-item"  >
+        <a class="nav-link active" href="#"  style="font-size:15px;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/dhipesh-saini/" target="_blank" style="font-size:15px;">LinkedIn</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.youtube.com/c/DhipeshSaini" target="_blank" style="font-size:15px;">Youtube</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/dhipesh_dz/" target="_blank" style="font-size:15px;">Social</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact" style="font-size:15px;">Contact</a>
+      </li>
+    </ul>
+ 
+</div>
+
+
+</nav>
+
+
+
+<div class=" parallax1">
+<h1 data-aos="zoom-in " data-aos-delay="1600" style=" text-align: center; padding-top: 200px;  font-size: 90px; font-family: 'Righteous', cursive; color: white;  text-shadow: 2px 2px 2px grey;"> Dhipesh Saini </h1>
+<hr width="20%">
+<p style=" text-align: center; padding-bottom: 50px; font-size: 15px; font-family: 'Righteous', cursive; color: white;  text-shadow: 1px 1px 1px grey;"> STAY CONNECTED </p>
+</div>
+ 
+
+
+
+
+
+<div style=" height: auto; background-image: url(bgg2.jpg); padding-top: 20px; ">
+
+
+<div class="container">
+  <div class="row">
+
+<div class="col-sm-2"></div>
+<div class="col-sm-4" style=" height: auto;">
+<img class="card-img-top  rounded" data-aos="fade-in" src="insta.png" alt="Card image" style="height: auto; width: 150px; border-radius: 40px !important;">
+</div>
+<div class="col-sm-6 pt-3 pb-0" style=" height: auto; ">
+  <h1 data-aos="fade-right" >  
+        <a href="https://www.instagram.com/dhipesh_dz/" id="Social" target="_blank" style="text-decoration: none; color: #FF4C5C; font-family: 'Righteous', cursive; transition-duration: 0.4s"> @DHIPESH_DZ </a>
+        </h1>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="container">
+  <div class="row">
+
+<div class="col-sm-2"></div>
+<div class="col-sm-4" style=" height: auto;">
+<img class="card-img-top  rounded" data-aos="fade-in" src="yb.png" alt="Card image" style="height: auto; width: 150px; border-radius: 40px !important;">
+</div>
+<div class="col-sm-6 pt-3 pb-0" style=" height: auto; ">
+   <h1 data-aos="fade-right" >
+      <a href="https://www.youtube.com/c/DhipeshSaini" id="Social" target="_blank" style="text-decoration: none; color: red; font-family: 'Righteous', cursive; transition-duration: 0.4s"> DHIPESH SAINI </a>
+          </h1>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+
+<div class="col-sm-2"></div>
+<div class="col-sm-4" style=" height: auto;">
+<img class="card-img-top  rounded" data-aos="fade-in" src="in.png" alt="Card image" style="height: auto; width: 150px; border-radius: 40px !important;">
+</div>
+<div class="col-sm-6 pt-3 pb-0" style=" height: auto; ">
+  <h1 data-aos="fade-right">
+          <a href="https://www.linkedin.com/in/dhipesh-saini/" target="_blank" id="Social" style="text-decoration: none; color: #228FBC; font-family: 'Righteous', cursive; transition-duration: 0.4s"> DHIPESH KOMAL SAINI </a>
+        </h1>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+
+<div class="col-sm-2"></div>
+<div class="col-sm-4" style=" height: auto; ">
+<img class="card-img-top  rounded" data-aos="fade-in" src="fb.png" alt="Card image" style="height: auto; width: 150px; border-radius: 40px !important;">
+</div>
+<div class="col-sm-6 pt-3 pb-0" style=" height: auto;  ">
+   <h1 data-aos="fade-right" >
+          <a href="https://www.facebook.com/Dhipesh-Saini-279308786048759" target="_blank" id="Social" style="text-decoration: none; color: #4174D0; font-family: 'Righteous', cursive; transition-duration: 0.4s"> DHIPESH SAINI </a>
+        </h1>
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid"  style="border: 0px solid black; height: auto; width: auto; ">
+<div data-aos="fade-in" style="height: auto; width: auto;  border: 1px solid #FCF6EF;; margin-top: 250px; margin-left: 5%; margin-right: 5%; background-color: #FCF6EF;">
+  <div data-aos="fade-down" style="border: 1px solid #24506A; height: auto; width: auto; margin-left: 15%; margin-right:15%;  margin-top: -160px; background-color: #24506A; " >
+  <div data-aos="fade-up" data-aos-delay="400" style=" height: auto; width: auto;  margin-left:3% ; margin-right:3% ; margin-top: 20px; padding-bottom: 20px;" >
+  <iframe  width="100%" height="350" src="https://www.youtube.com/embed/dlpUPqcOGNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  </div>
+  
+
+    <div class="container-fluid col-sm-12" style="border: 1px solid #FCF6EF; height: auto; padding-top: 40px;">
+       <div class="row">
+        <div class="col-sm-1"></div>
+        
+            <div class="col-md-2 mt-5 p-3 text-center" data-aos="fade-down" style="background-color: #9E6945;">
+              <img src="my4.png" height=auto; width=100%;>
+            </div>
+            <div class="col-md-2 mb-5 p-3 text-center " data-aos="fade-up" style="background-color: #9E6945;">
+              <img src="my5.jpg" height=auto; width=100%;>
+            </div>
+            <div class="col-md-2 mt-5 mb-5 p-3 text-center " data-aos="fade-out" style="background-color: #24506A;">
+              
+
+               <div class="slideshow-container-fluid">
+<div class="mySlides fade">
+  
+  <img src="my3.jpg" style="width:100%; height: 200px;">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="ss1.jpeg" style="width:100%; height: 200px;">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="ss2.jpeg" style="width:100%; height: 200px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="ss3.jpeg" style="width:100%; height: 200px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="ss4.jpg" style="width:100%; height: 200px;">
+</div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+   <span class="dot"></span> 
+    <span class="dot"></span> 
+      
+</div>
+
+            </div>
+
+   <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active1", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active1";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+
+            <div class="col-md-2 mt-5 p-3 text-center " data-aos="fade-down" style="background-color: #9E6945;">
+              <img src="my5.jpg" height=auto; width=100%;>
+            </div>
+            <div class="col-md-2 mb-5 p-3 text-center " data-aos="fade-up" style="background-color: #9E6945;">
+              <img src="my4.png" height=auto; width=100%;>
+            </div>
+        
+        <div class="col-sm-1"></div>
+                         
+         </div>
+  </div>
+
+<br>
+  </div>
+
+</div>
+
+
+
+<br>
+
+
+
+<div class="container" style="border: 1px solid white; height: auto; width: auto;">
+<div class="row">
+
+    
+
+        <div class="col-sm-4" style="border: 1px solid white; padding: 0;" >
+            <div class="item" data-aos="fade-right" style="height: auto; width: auto; border: 1px solid #B7E5E1; margin-top: 3%; padding: 20 20 20 20; background-color: #24506A; ">
+                <h1 style="font-family: 'Poiret One', cursive; color: white;"><b> My</b> </h1>
+                <h1 style="font-family: 'Poiret One', cursive; color: white;"><b> Social Media</b> </h1>
+                <br>
+                <h4 style="font-family: monospace; padding-right: 60px; color: lightyellow;">  Ok, So this is where i am always active, sharing some daily life stuff, memories and events as well.  </h4>
+                <br>
+                <h4 style="font-family: monospace; padding-right: 60px; color: lightyellow;"> Want to Know More about Me?  </h4>
+                <br>
+                <button class="btn btn-light"><a href="https://www.instagram.com/its_dhipeshdz/" target="_blank" style="text-decoration: none; color:#24506A ;"> Follow Me </a> </button>
+           </div>
+       </div>
+
+       <div class="col-sm-2"></div>
+
+    
+
+       <div class="col-sm-6" >
+           <div  data-aos="fade-in" style=" border: 1px solid #24506A; height: 610px; margin-top: 3%; background-color: #24506A; ">
+                <div  data-aos="fade-left" style="width: auto; height: auto; margin-left: 5%; margin-top: -3%; ">
+                <img src="mybig2.jpeg" height="100%" width="100%">
+                </div>
+           </div>
+       </div>
+       
+</div>
+</div>
+
+<br>
+<br>
+
+
+<div class="container col-sm-12" style=" background-color: #FCF6EF; height: auto; width: auto;  ">
+  <div class="row ">
+    
+<div class="col-sm-1"> </div>
+
+<div class="col-sm-3 card" data-aos="zoom-in">
+  <img src="1.png" alt="" style="width:auto; height: 180px; border-radius: 20px 20px 0px 0px ; margin-top: 20px;">
+  <div class="container">
+    <br>
+    <h4><b>Dhipesh Saini</b></h4> 
+    <p>28-07-2020</p>
+    <hr width="60%" style="float: left; margin-top: -3%">
+    <br>
+    <p> Hey Everyone !!</p>
+    <p> I have Created this Website using HTML, CSS, Bootstrap and JS. Hopefully some new features will also be added and glitches will be removed soon to make it better. </p> 
+  </div>
+</div>
+
+<div class="col-sm-1"> </div>
+
+<div class="col-sm-2 card" data-aos="zoom-in">
+  <img src="2.jpg" alt="" style="width:auto; height: 180px; border-radius: 20px 20px 0px 0px ; margin-top: 20px;">
+  <div class="container">
+    <br>
+    <h4><b>Dhipesh Saini</b></h4> 
+    <p>17-08-2020</p>
+    <hr width="60%" style="float: left; margin-top: -3%">
+    <br>
+    <p> Deployed this Website using Firebase. Which provides NoSql Databse, Free Hosting and many more features as well.  </p> 
+  </div>
+</div>
+
+<div class="col-sm-1"> </div>
+
+<div class="col-sm-3 card" data-aos="zoom-in">
+  <img src="construction.jpg" alt="" style="width:auto; height: 180px; border-radius: 20px 20px 0px 0px ; margin-top: 20px;">
+  <div class="container">
+    <br>
+    <h4><b>Dhipesh Saini</b></h4> 
+    <p>28-08-2020</p>
+    <hr width="60%" style="float: left; margin-top: -3%">
+    <br>
+    <p> This Website is still under construction, testing and repairing phase. Will always try to imrove it more and more.</p> 
+  </div>
+</div>
+
+<div class="col-sm-1"> </div>
+
+</div>
+</div>
+
+
+<div class="container col-sm-12" style=" padding-bottom: 30px; background-color: #FCF6EF;  ">
+  <div class="row ">
+    
+<div class="col-sm-1"> </div>
+
+<div class="col-sm-3 card" data-aos="fade-down">
+  <img src="wall2.jfif" alt="" style="width:auto; height: 180px; border-radius: 20px 20px 0px 0px ; margin-top: 20px;">
+  <div class="container">
+    <br>
+    <h4><b>Dhipesh Saini</b></h4> 
+    <p>Date</p>
+    <hr width="60%" style="float: left; margin-top: -3%">
+    <br>
+    <p> Stay Connected</p> 
+  </div>
+</div>
+
+<div class="col-sm-1"> </div>
+
+<div class="col-sm-2 card" data-aos="fade-down">
+  <img src="wall1.jfif" alt="" style="width:auto; height: 180px; border-radius: 20px 20px 0px 0px ; margin-top: 20px;">
+  <div class="container">
+    <br>
+    <h4><b>Dhipesh Saini</b></h4> 
+    <p>Date</p>
+    <hr width="60%" style="float: left; margin-top: -3%">
+    <br>
+    <p> Stay Connected </p> 
+  </div>
+</div>
+
+<div class="col-sm-1"> </div>
+
+<div class="col-sm-3 card" data-aos="fade-down">
+  <img src="wall2.jfif" alt="" style="width:auto; height: 180px; border-radius: 20px 20px 0px 0px ; margin-top: 20px;">
+  <div class="container">
+    <br>
+    <h4><b>Dhipesh Saini</b></h4> 
+    <p>Date</p>
+    <hr width="60%" style="float: left; margin-top: -3%">
+    <br>
+    <p> Stay Connected </p> 
+  </div>
+</div>
+
+<div class="col-sm-1"> </div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="container ">
+<form action="https://www.SnapHost.com/captcha/send.aspx" method="post" id="NewsletterSubscriptionForm" onsubmit="return ValidateForm(this);" target="_top">
+<input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="kdhipeshkomal@yahoo.com" />
+<input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="PWQJY2536MJY" />
+<input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://dhipeshsaini-60ae1.web.app/"  />
+<input id="skip_Subject" name="skip_Subject" type="hidden" value="Newsletter Subscription Form" />
+<input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+
+else { alert("THANK YOU for Subscribing to MY BLOGS !!"); }
+return true; 
+
+
+}
+
+
+
+
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+
+
+</script>
+
+
+
+
+<div   data-aos="fade-down" class="container-fluid mt-4 pt-4" style="border: 6px dotted #24506A; border-radius: 100px;   width: auto; height: 400px; ">
+<table border="0" cellpadding="5" cellspacing="0" style="width:auto; margin:auto; text-align:center;">
+<tr ><td >
+<input id="Name" name="Name"  type="text" maxlength="60" placeholder="Name" style="outline: none; width:250px; padding: 10 10 10 10; border: 1px solid #24506A; border-radius: 50px; background-color: white; " />
+</td></tr><tr><td>
+<br>
+
+<input id="FromEmailAddress" name="FromEmailAddress" type="email" maxlength="60" placeholder="Your Email" style="outline: none; width:250px; padding: 10 10 10 10; border-radius: 50px; border: 1px solid #24506A; background-color: white; " />
+</td></tr>
+<tr><td align="center">
+<br />
+
+
+<img id="CaptchaImage" alt="Captcha" title="Newsletter Subscription form" border="0" style="margin-bottom:10px;"
+src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=PWQJY2536MJY" />
+<br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a>
+<br>
+<br />
+
+
+<i>Enter code here:</i>
+<input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:auto; border:1px solid #999999" maxlength="6" />
+<br /><br>
+
+
+<input id="skip_Submit" class="btn btn-warning" name="skip_Submit" type="submit" style="text-decoration: none; color:#24506A ;"   value="SUBSCRIBE" />
+
+
+
+</td></tr> 
+</table>
+</div>
+</form>
+
+</div>
+
+<br>
+
+
+
+
+
+
+
+<div class="container-fluid col-sm-12" id="contact" style="border: 1px solid white;">
+  <div class="row">
+    <div class="col-sm-6" style="border: 1px solid white; padding: 40 60 40 60;">
+      <img data-aos="fade-in" src="wall.jfif" height="650px;" width="100%">
+    </div>
+
+
+
+<div class="col-sm-1"></div>
+
+
+    
+
+    <div class="col-sm-4" style="border: 1px solid white; padding-left: 40px; display: inline;" data-aos="fade-right">
+			<h1 style="color: #24506A; margin-top: 20%; font-family: serif;" data-aos="fade-in" > CONTACT </h1>
+			<br>
+			<p style="font-family: 'Poiret One', cursive;"><b>Anandpur Sahib, Ropar, Punjab </b></p>
+			<p style="font-family: 'Poiret One', cursive;"><b>kdhipeshkomal@yahoo.com </b></p>
+			<br>
+
+
+			
+			<input type="text" name="name" placeholder="Name" style="outline: none; width:310px ; padding: 10 10 10 10; border: 1px solid #24506A; background-color: white; ">
+			<br>
+			<br>
+			<input type="email" name="email" placeholder="E-mail" style="outline: none; width:310px ; padding: 10 10 10 10; border: 1px solid #24506A; background-color: white; ">
+			<br>
+			<br>
+			<textarea name="message" placeholder="Type your message here..." style="outline: none; width:310px ; padding: 10 10 10 10; border: 1px solid #24506A; background-color: white; "></textarea>
+			<br>
+            <br>
+
+		    <button class="btn" name="submit" style="background-color:#24506A; color: white; margin-left: 50%; " ><a href="mailto: kdhipeshkomal@yahoo.com" style="text-decoration: none; color: white;"> SUBMIT</a></button>
+            
+	</div>
+
+
+<div class="col-sm-1"></div>
+
+
+  </div>
+</div>
+
+
+<footer class="container-fluid" data-aos="zoom-in" align="center" style="background-color: #686A6D;">
+
+
+<br>  
+ 
+ <div>
+        <ul class="social-network social-circle">
+          <li><a href="https://www.instagram.com/dhipesh_dz/" class="icoInstagram"  title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            
+            <li><a href="https://www.linkedin.com/in/dhipesh-saini/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            
+            <li><a href="https://www.facebook.com/Dhipesh-Saini-279308786048759" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+
+            <li><a href="https://www.youtube.com/c/DhipeshSaini" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+        </ul>   
+ </div>
+
+<br>
+
+    <div>
+
+        <a href="Mailto:kdhipeshkomal@yahoo.com" title="kdhipeshkomal@yahoo.com" id="footer" style="text-decoration: none;  color: white" ><b>
+          <img src="msg.png"  width="auto" height="6%"> E-MAIL </b>
+        </a>   
+<br>
+        <b style="color: white; cursor: default; font-family: 'Bellota', cursive;" id="footer" > SPREADLOVE </b>
+        
+    </div>
+<br>
+
+<p>© 2020 by Dhipesh Saini. </p>
+
+
+
+</footer>
+
+
+
+<script type="text/javascript">
+
+
+      
+      //Get the button
+
+$(document).ready(function(){
+
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+});
+
+    </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  duration: 1300,
+});
+
+</script>
+
+</body>
+</html>
